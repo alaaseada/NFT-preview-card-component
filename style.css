@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font: 14px 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    padding: 20px;
+}
+.card > p{
+    padding: 10px 0px;
+}
+/* .design{
+    width: 100%;
+    height: 300px;
+    background: url(./images/image-equilibrium.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+.design:hover{
+
+}    */
+
+.design, .signature, .time,.points{
+    position: relative;
+}
+
+.design {
+    width: 100%;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.view-icon{
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.design:hover{
+    cursor: pointer;
+}
+.design:hover .image{
+    opacity: 0.3;
+}
+.design:hover .view-icon{
+    opacity: 1;
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+}
+.title, .name{
+    color: white;
+}
+.title{
+    font-family: 18px;
+    font-weight: 600;
+}
+.title:hover, .name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.points{
+    color: hsl(178, 100%, 50%);
+    margin-left: 20px;
+}
+.points::before{
+    content: url(./images/icon-ethereum.svg);
+    position: absolute;
+    left: -20px;
+}
+.time::before{
+    content: url(./images/icon-clock.svg);
+    position: absolute;
+    left: -20px;
+}
+.signature{
+    left: 30px;
+    font-size: small;
+}
+.signature::before{
+    content: "";
+    background: url(./images/image-avatar.png) no-repeat;
+    position: absolute;
+    top: 9px;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.rounded{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
